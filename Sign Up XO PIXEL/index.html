@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../Sign Up XO PIXEL/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg></script>
   <title>Formulario</title>
 </head>
 <body>
@@ -15,7 +18,7 @@
       </section>
     </div>
     <div class="right">
-      <form>
+      <form action="#">
         <section class="copy">
           <h2>Sign Up</h2>
           <div class="login-container">
@@ -24,19 +27,20 @@
         </section>
         <div class="input-container name">
           <label for="fname">Full Name</label>
-          <input id="fname" name="fname" type="text">
+          <input id="fname" name="fname" type="text" required>
         </div>
 
         <div class="input-container email">
           <label for="email">Email</label>
-          <input id="email" name="email" type="email">
+          <input id="email" name="email" type="email" required>
+        </div>
 
           <div class="input-container password">
-            <label for="password">Password</label>
+            <label for="password">Password<label>
             <input id="password" name="password" 
             placeholder="Must be at least 6 characters"
-            type="password">
-            <i class="far fa-eye-slash"></i>
+            type="password" required>
+            <!-- <i class="far fa-eye-slash" id="teste"></i> -->
         </div>
 
         <div class="input-container cta">
@@ -46,6 +50,7 @@
             Sign up for email updates.
           </label>
         </div>
+
         <button class="signup-btn" type="submit">Sign Up</button>
         <section class="copy legal">
           <p><span class="smal">
@@ -54,7 +59,7 @@
           </span></p>
         </section>
       </form>
-    </div>
+    
   </div>
 </body>
 </html>
