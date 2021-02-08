@@ -7,10 +7,18 @@
 }
 
 body {
-   background: gray;
+   background:  #543FD3;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: center ;
+   height: 100vh;
+}
+
+.text p img {
+   display: inline;
+   width: 1rem;
+   margin-right: 10px;
+   align-items: center;
 }
 
 .text h1 {
@@ -18,13 +26,54 @@ body {
    font-weight: bold;
 }
 
+.text p {
+   font-size: 20px;
+   line-height: 3rem;
+}
+
+svg {
+   position: absolute;
+   bottom: 10px;
+}
+
 main.container {
+   position: relative;
    display: flex;
    justify-content: space-between;
    background: white;
-   width: 650px;
+   width: 40rem;
    height: 40vh;
    padding: 2rem;
    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
    border-radius: 2px;
+}
+
+.form  {
+   display: flex;
+   flex-direction: column;
+   margin: 1rem 1rem;
+}
+
+label {
+   display: block;
+   color: #767676;
+   font-size: 13px;
+}
+
+.input-field input {
+   border: solid 2px #949494;
+   margin-bottom: 1rem;
+   border-radius: 4px;
+   padding: 0.6rem;
+   outline: none;
+}
+
+.input-field #first-name:focus{
+   border: solid 2px #543FD3;
+   transition: all .7s ease;
+}
+
+.input-field #password:focus{
+   border: solid 2px #543FD3;
+   transition: all .7s ease;
 }

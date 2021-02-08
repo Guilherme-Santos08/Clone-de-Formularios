@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Figma</title>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Form Figma</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-   <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-   <main class="container">
+  <body>
+    <main class="container">
       <div class="text">
-         <h1>Accessible <br> Form Fields</h1>
-         <p><img src="assets/vector.svg" alt="" class="svg"> Level AA contrast ratio</p>
-         <p><img src="assets/vector.svg" alt="" class="svg">Supporting icons</p>
-         <p><img src="assets/vector.svg" alt="" class="svg">Easily recognizable states</p>
+        <h1>
+          Accessible <br />
+          Form Fields
+        </h1>
+        <p>
+          <img src="assets/vector.svg" alt="" class="imgsvg" />Level AA contrast
+          ratio
+        </p>
+        <p>
+          <img src="assets/vector.svg" alt="" class="imgsvg" />Supporting icons
+        </p>
+        <p>
+          <img src="assets/vector.svg" alt="" class="imgsvg" />Easily recognizable
+          states
+        </p>
       </div>
 
-      <form action="">
-         <div class="input-field">
-            <label for="dropdown">DropDown</label>
-            <input type="text" id="dropdown" name="dropdown">
-         </div>
+      <form action="" class="form">
+        <div class="input-field">
+          <label for="dropdown">Label</label>
+          <input type="text" placeholder="Select one" list="dropdown" name="dropdown" />
+          <datalist id="dropdown">
+            <option>DropDown</option>
+            <option value="">Teste</option>
+          </datalist>
+        </div>
 
-         <div class="input-field">
-            <label for="first-name">Fist-NAME</label>
-            <input type="text" id="first-name" required>
-         </div>
+        <div class="input-field">
+          <label for="first-name" id="first-name">Fist NAME</label>
+          <input type="text" id="first-name" required />
+        </div>
 
-         <div class="input-field">
-            <label for="password">Password</label>
-            <input type="password" id="password" required>
-         </div>
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+        </div>
 
-         <div class="input-field">
-            <label for="label">Label</label>
-            <input type="text" id="label" value="Input" disabled>
-         </div>
+        <div class="input-field">
+          <label for="label">Label</label>
+          <input type="text" id="label" placeholder="Label" disabled />
+        </div>
       </form>
-   </main>
-</body>
 
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 107 39"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.5"
+          d="M5.0215 0.855351H0.305867L13.9449 38H18.588L32.227 0.855351H27.5114L16.4841 32.1236H16.0488L5.0215 0.855351ZM37.3598 38H60.7929V34.0099H43.5264V33.7197L51.8695 24.7962C58.2537 17.9586 60.1399 14.7665 60.1399 10.6494C60.1399 4.91805 55.4969 0.347514 48.9675 0.347514C42.4563 0.347514 37.5049 4.77295 37.5049 11.3023H41.7853C41.7853 7.07636 44.524 4.26511 48.8224 4.26511C52.8489 4.26511 55.9322 6.73175 55.9322 10.6494C55.9322 14.0772 53.9189 16.6164 49.6205 21.3139L37.3598 34.7353V38ZM71.4756 38.2902C73.2712 38.2902 74.7403 36.8211 74.7403 35.0255C74.7403 33.23 73.2712 31.7609 71.4756 31.7609C69.68 31.7609 68.2109 33.23 68.2109 35.0255C68.2109 36.8211 69.68 38.2902 71.4756 38.2902ZM93.1675 38.5078C101.365 38.5078 106.081 31.5614 106.081 19.4277C106.081 7.38469 101.293 0.347514 93.1675 0.347514C85.0421 0.347514 80.2539 7.38469 80.2539 19.4277C80.2539 31.5614 84.9695 38.5078 93.1675 38.5078ZM93.1675 34.5177C87.7626 34.5177 84.6068 29.0947 84.6068 19.4277C84.6068 9.77877 87.7989 4.26511 93.1675 4.26511C98.536 4.26511 101.728 9.77877 101.728 19.4277C101.728 29.0947 98.5723 34.5177 93.1675 34.5177Z"
+          fill="black"
+        />
+      </svg>
+    </main>
+  </body>
 </html>
