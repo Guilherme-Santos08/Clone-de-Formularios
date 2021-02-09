@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dribbble</title>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Dribbble</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      data-auto-replace-svg
+    ></script>
+  </head>
 
-   <link rel="stylesheet" href="style.css">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-   <main>
+  <body>
+    <main>
       <div class="text">
-         <h1>Creat account</h1>
-         <p>Already have an account? <span><a href="#">Sign in</a></span></p>
+        <h1>Creat account</h1>
+        <p>
+          Already have an account?
+          <span class="sign"><a href="#">Sign in</a></span>
+        </p>
       </div>
 
       <form action="">
-         <div class="input-field">
-            <label for="#">Nome de usuario</label>
-            <input type="text" placeholder="Nick" required>
-         </div>
+        <div class="input-usuario input-group">
+          <label class="sr-only" for="usuario">Nome de usuario</label>
+          <input id="usuario" type="text" placeholder="Nick" required />
+        </div>
 
-         <div class="input-name">
-            <label for="">Fist Name</label>
-            <input type="text" placeholder="First name" required>
-         </div>
+        <div class="input-name">
+          <label class="sr-only" for="nome">Fist Name</label>
+          <input id="nome" type="text" placeholder="First name" required />
 
-         <div class="input-last-name">
-            <label for="">Last name</label>
-            <input type="email" placeholder="E-mail" pattern="@/.com">
-         </div>
+          <label class="sr-only" for="ultimonome">Last name</label>
+          <input id="ultimonome" type="text" placeholder="Last name" required />
+        </div>
 
-         <button class="btn">Sign up</button>
+        <div class="input-email input-group">
+          <label class="sr-only" for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="E-mail"
+            pattern="@/.com"
+          />
+        </div>
 
-         <p> <input type="Checkbox"> I have read and agree to the <a href="#">Terms of Service</a></p>
+        <button class="btn">Sign up <span class="arrow"><i class="fas fa-arrow-right"></i></span></button>
+
+        <p class="terms">
+          <input type="Checkbox" /> I have read and agree to the
+          <a href="#">Terms of Service</a>
+        </p>
       </form>
-   </main>
-</body>
-
+    </main>
+  </body>
 </html>

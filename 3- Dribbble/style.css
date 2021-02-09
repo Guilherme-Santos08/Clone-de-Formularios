@@ -2,6 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: "Roboto",sans-serif;
 }
 
 body {
@@ -15,16 +16,173 @@ body {
    justify-content: center;
 }
 
+.sr-only{ /* Vamos deixar transparente para que leitores de tela possam ler.*/
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden; /*hidden significa escondida/ e preciso estuda overflow*/
+   clip: rect(0, 0, 0);
+   white-space: nowrap;
+   border-width: 0; /*largura da bordar 0*/
+ }
+
 main {
    background: #fcf8f3;
-   width: 40rem;
-   height: 50vh;
+   width: 25rem;
+   height: 435px;
 
    display: flex;
    flex-direction: column;
    position: relative;
+
+   border-radius: 12px;
 }
 
 .text {
-   margin: 5px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 17px 17px 2px 17px;
+}
+
+.text h1 {
+   font-size: 43px;
+   font-weight: 600;
+   padding: 1rem;
+}
+
+.text p {
+   font-size: 15px;
+   color: #4C4C49;
+}
+
+.sign a{
+   color: #2393FF;
+   opacity: 0.8;
+   transition: all 0.2s ease;
+}
+
+.sign a:hover{
+   opacity: 1;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem;
+}
+
+.input-group {
+   padding: 10px;
+}
+
+.input-group input {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   padding: 13px;
+   width: 20rem;
+
+   border-radius: 8px;
+   outline: none;
+   border: solid 1px rgb(223, 222, 222);
+   box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.12);
+}
+
+#email {
+   border: none;
+   box-shadow: none;
+   background-color:#F2F2F0;
+}
+
+.input-name {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#nome{
+   padding: 13px;
+   width: 11.2rem;
+
+   margin-right: 3px;
+   outline: none;
+   border: none;
+
+   border-radius: 8px 0 0 8px;
+   background-color:#F0F2F0;
+}
+
+#ultimonome {
+   padding: 13px;
+   width: 8.6rem;
+
+   outline: none;
+   border: none;
+
+   border-radius: 0 8px 8px 0;
+   background-color:#F0F2F0;
+}
+
+
+.btn {
+   position: relative;
+
+   font-size: 16px;
+   width: 20rem;
+   padding: 0.9rem;
+   margin: 10px 0 1.5rem 0;
+
+   border-radius: 10px;
+   background: #2393FF;
+   color: #fff;
+   opacity: 0.8;
+   
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+
+.btn:hover{
+   opacity: 1;
+   transition: all 0.3s ease 0s;
+
+}
+
+.terms {
+   font-size: 14px;
+   align-items: right;
+
+   color:#A3A2A1;
+}
+
+.terms a {
+   font-size: 14px;
+   color: #2393FF;
+
+   text-decoration: none;
+
+   opacity: 0.8;
+}
+
+.terms a:hover {
+   text-decoration: underline;
+   opacity: 1;
+}
+
+.arrow {
+   position: absolute;
+   right: 10px;
+
+   font-size: 16px;
+
+   display: inline-block;
+
+   align-items: center;
 }
