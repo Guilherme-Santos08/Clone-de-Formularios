@@ -18,13 +18,12 @@ body {
 }
 
 main {
-   position: relative;
-   width: 1070px;
+   width: 1000px;
    height: 600px;
 
-   display: flex;
 
-   align-items: center;
+   display: flex;
+   justify-content: space-around;
 
    background: #fafafa;
    border-radius: 14px;
@@ -41,25 +40,43 @@ main {
    border-radius: 14px 0 0 14px;
    background: #F1B1D4;
 }
+/* ------ Main ------*/
 
 .container {
    display: flex;
    flex-direction: column;
+   align-items: center;
    justify-content: center;
+   margin: 50px;
+
+   position: relative;
 }
 
-form {
+/* ------ Header ------*/
+.container header{
+   top: 15px;
+   position: absolute;
+}
+
+.container header h1 {
+   font-size: 32px;
+   color: #2D292D;
+   margin-bottom: 16px;
+}
+
+.container header p {
+   font-size: 15px;
+   color: #8C8C8C;
+
+}
+
+/* ------ Form ------*/
+
+.container form {
    display: flex;
    flex-direction: column;
 }
 
-.input-group1 label, .input-group2 label{
-   display: block;
-}
-
-
-.input-group1 input {
-   display: inline;
-   padding: 3px; 
-   width: 100px;
+.container form .input-group1 input{
+   width: 140px;
 }
