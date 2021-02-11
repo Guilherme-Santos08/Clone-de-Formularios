@@ -18,8 +18,8 @@ body {
 }
 
 main {
-   width: 1000px;
-   height: 600px;
+   width: 1120px;
+   height: 650px;
 
 
    display: flex;
@@ -30,8 +30,8 @@ main {
 }
 
 .image img {
-   width: 400px;
-   height: 600px;
+   width: 490px;
+   height: 650px;
 
    display: flex;
    align-items: center;
@@ -47,15 +47,12 @@ main {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin: 50px;
-
-   position: relative;
+   margin: 60px;
 }
 
 /* ------ Header ------*/
 .container header{
-   top: 15px;
-   position: absolute;
+   padding-bottom: 50px;
 }
 
 .container header h1 {
@@ -67,7 +64,7 @@ main {
 .container header p {
    font-size: 15px;
    color: #8C8C8C;
-
+   padding: 0px;
 }
 
 /* ------ Form ------*/
@@ -77,6 +74,94 @@ main {
    flex-direction: column;
 }
 
-.container form .input-group1 input{
-   width: 140px;
+/* ------ Input/label ------*/
+.name, .password, .email {
+   display: flex;
+   flex-direction: column;
+   padding: 2px;
+
+   margin-bottom: 15px;
+}
+
+label {
+   color: #2d292d;
+}
+
+.input-group1 {
+   display: flex;
+}
+
+.input-group1 input {
+   padding: 9px;
+   width: 240px;
+
+   background: #EBEFF2;
+   border: solid 1px #EBEFF2;
+   border-radius: 8px;
+   outline: none;
+}
+
+.rigth {
+   margin-right: 24px;
+}
+
+.input-group2 input {
+   display: block;
+   padding: 9px;
+   width: 510px;
+
+   background: #EBEFF2;
+   border: solid 1px #EBEFF2;
+   border-radius: 8px;
+   outline: none;
+}
+
+/* ------ Texto/termos de contrato ------*/
+
+.container p{
+   font-size: 15px;
+   color: #8C8C8C;
+
+   margin-top: 17px;
+}
+
+.container p a{
+   font-size: 15px;
+   text-decoration: none;
+
+   color: #080d8c;
+   opacity: 0.8;
+}
+
+.container p a:hover{
+   text-decoration: underline;
+   transition: all 0.8s ease;
+   opacity: 1;
+}
+
+/* ------ Button ------*/
+
+.btn {
+   width: 250px;
+   padding: 10px;
+   margin-top: 35px;
+   
+   color: white;
+   background-color: #080d8c;
+   opacity: 0.8;
+
+   border-radius: 4px;
+
+   outline: none;
+   border: none;
+}
+
+.btn:hover {
+   opacity: 1;
+   transition: all 0.8s ease-out;
+}
+
+/* ------ Login ------*/
+.login p {
+   margin-top: 22px;
 }

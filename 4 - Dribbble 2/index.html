@@ -25,36 +25,47 @@
             <p>Get instant access to the key takeaways the worl's most influential books ever written that are
                guaranteed to change your life.</p>
          </header>
-         
+
          <form action="">
 
             <div class="input-group1 top">
-               <label for="fname">Fist Name</label>
-               <input id="fname" name="fname" type="text" required>
 
-               <label for="lname">Last Name</label>
-               <input id="lname" name="lname" type="text" required>
+               <div class="name rigth">
+                  <label for="fname">Fist Name</label>
+                  <input id="fname" name="fname" type="text" required>
+               </div>
+               <div class="name">
+                  <label for="lname">Last Name</label>
+                  <input id="lname" name="lname" type="text" required>
+               </div>
             </div>
 
-            <div class="input-group2">
+            <div class="input-group2 email ">
                <label for="email">Email Address</label>
                <input id="email" name="email" type="text" required pattern="@\.com">
             </div>
 
             <div class="input-group1">
-               <label for="password">Password</label>
-               <input id="password" name="password" type="password" required>
-
-               <label for="cpassword">Confirm Password</label>
-               <input id="password" name="password" type="password" required>
+               <div class="password rigth">
+                  <label for="password">Password</label>
+                  <input id="password" name="password" type="password" required>
+               </div>
+               <div class="password">
+                  <label for="cpassword">Confirm Password</label>
+                  <input id="password" name="password" type="password" required>
+               </div>
             </div>
 
-            <p><input type="checkbox"> Yes, I understand and agree to BookClub's <a href="#">Terms of service</a>,
-               including the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a></p>
+            <div class="confirm">
+               <p><input type="checkbox"> Yes, I understand and agree to BookClub's <a href="#">Terms of service</a>,
+                  including the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a></p>
 
-            <button>Create Account</button>
+               <button class="btn">Create Account</button>
 
-            <p>Alredy have an account? <a href="#">Log in</a></p>
+               <div class="login">
+                  <p>Alredy have an account? <a href="#">Log in</a></p>
+               </div>
+            </div>
          </form>
       </div>
    </main>
