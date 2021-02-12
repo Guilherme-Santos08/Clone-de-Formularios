@@ -1,0 +1,207 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   width: 100vw;
+   height: 100vh;
+
+   background: #f3f4f5;
+}
+
+.input-group label{ /* Vamos deixar transparente para que leitores de tela possam ler.*/
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden; /*hidden significa escondida/ e preciso estuda overflow*/
+   clip: rect(0, 0, 0);
+   white-space: nowrap;
+   border-width: 0; /*largura da bordar 0*/
+ }
+
+main {
+   width: 750px;
+   height: 550px;
+   padding-top: 5px;
+
+   overflow: hidden;
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   position: relative;
+
+   border-radius: 10px;
+   background-color: white;
+   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.2);
+}
+
+/* ------ Form ------ */
+.main form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+   padding: auto;
+   margin: 0 50px;
+}
+
+/* ------ Form/Text ------ */
+form .text {
+   position: absolute;
+   top: 0;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   margin: 50px 0;
+}
+
+form .text h1 {
+   font-size: 35px;
+   font-weight: bold;
+   margin-bottom: 25px;
+
+   text-align: center;
+   line-height: 50px;
+   color: #00B0FF;
+} 
+
+.social-media {
+   text-align: center;
+   margin-bottom: 25px;
+} 
+
+.social-media a {
+   font-size: 12px;
+   font-weight: bold;
+
+   color: #070607;
+   padding: 6.9px 10px;
+   margin: 0 8px;
+
+   border: solid 1px #070607;
+   text-decoration: none;
+   border-radius: 100px;
+}
+
+.text p {
+   font-size: 14px;
+   color: #7a8285;
+
+   text-align: center;
+   margin-top: 10px;
+}
+
+/* ----- Form/input ------*/
+
+main form:first-child{
+   margin-top: 150px;
+}
+
+form .input-group {
+   padding-bottom: 15px;
+}
+
+form .input-group input{
+   width: 300px;
+   padding: 10px;
+
+
+   border-radius: 5px;
+   background-color: #f3f4f5 ;
+   color: #7a8285;
+
+   outline: none;
+   border: solid 1px #A3C9D9;
+}
+
+::-webkit-input-placeholder {
+   color: #A3C9D9;
+}
+
+/* ------ Terms ------ */
+.terms input {
+   width: 25px;
+}
+
+.terms p{
+   margin-top: 12px;
+   font-size: 13px;
+
+   width: 300px;
+
+   margin-bottom: 25px;
+}
+
+.terms p a {
+   color: #00B0FF;
+   text-decoration: none;
+   opacity: 0.8;
+}
+
+.terms p a:hover {
+   text-decoration: underline;
+   opacity: 1;
+}
+
+/* ------ Button ----- */
+.btn1 , .btn2 {
+   margin: 0 5px;
+}
+
+.btn1 {
+   padding: 11px 45px;
+
+   border-radius: 5px;
+   color: white;
+   background-color: #00B0FF;
+   opacity: 0.8;
+
+   border: 1px solid #00B0FF;
+   border: none;
+   cursor: pointer;
+}
+
+.btn1:hover {
+   opacity: 1;
+}
+
+.btn2 {
+   padding: 11px 45px;
+
+   border-radius: 5px;
+   color: #00B0FF;
+   background-color: white;
+   opacity: 0.8;
+
+   border: 1px solid #00B0FF;
+   outline: none;
+   cursor: pointer;
+}
+
+.btn2:hover {
+   opacity: 1;
+}
+
+
+
+.image img {
+   width: 300px;
+   height: 550px;
+   text-align: center;
+    
+   border-radius: 0 10px 10px 0;
+ }
