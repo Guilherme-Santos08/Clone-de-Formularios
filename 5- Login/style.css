@@ -1,0 +1,104 @@
+*{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   font-size: 16px;
+
+   width: 100vw;
+   height: 100vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-image: linear-gradient(to right top, #6755e0, #7357de, #7e59dd, #885bdb, #915dda);
+}
+
+main {
+   width: 1450px;
+   min-height: 600px;
+
+   padding: 40px;
+
+   display: flex;
+   
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   background-color :#F0F2F0;
+}
+
+/* ------ Form ------ */
+form {
+   position: relative;
+   width: 370px;
+
+   display: flex;
+   flex-direction: column;
+   padding: 30px;
+
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   background-color: white;
+}
+
+form h1 {
+   margin-top: 10px;
+   font-size: 2rem;
+}
+form p {
+   margin-bottom: 25px;
+   color: #737373;
+}
+
+form p a {
+   color: #662adc;
+}
+
+/* ------ Input/label ------ */
+.input-group input {
+   width: 100%;
+   padding: 10px;
+   border-radius: 5px;
+   margin-top: 2px;
+
+   border: solid 1px #737373;
+
+   outline: none;
+}
+
+.input-group label {
+   font-size: 13px;
+   
+}
+
+.input-group2 {
+   margin-top: 12px;
+}
+
+.input-group2 label span {
+   margin-left: 125px;
+}
+
+.input-group2 label span a{
+   color: #662adc
+}
+
+input[type="checkbox"]{
+   margin-top: 15px;
+}
+
+
+
+/* ------ Image ------ */
+.image img {
+   width: 500px;
+   height: 500px;
+
+   position: absolute;
+   right: 0;
+}

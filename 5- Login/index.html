@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,27 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
    <main>
       <form action="">
          <h1>Login</h1>
          <p>Doesn't have an account yet? <a href="#">Sign up</a></p>
 
-         <label for="email">Email Address</label>
-         <input type="email" id="password" name="password" pattern="@/.com" required>
+         <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="password" name="password" pattern="@/.com" required>
+         </div>
 
-         <label for="password">Password <span><a href="#">Forgot Password</a></span></label>
-         <input type="password" id="password" name="password">
+         <div class="input-group input-group2">
+            <label for="password">Password <span><a href="#">Forgot Password?</a></span></label>
+            <input type="password" id="password" name="password">
+         </div>
 
-         <input type="checkbox">
+         <p><input type="checkbox"> Remember me</p>
 
          <button type="submit">Login</button>
-         
+
          <div class="alternative">
             <span>or login with</span>
          </div>
@@ -37,8 +43,9 @@
       </form>
 
       <div class="image">
-         <img src="assets/undraw_dev_productivity_umsq.svg" alt="image">
+         <img src="assets/undraw_pair_programming_njlp.svg" alt="image">
       </div>
    </main>
 </body>
+
 </html>
