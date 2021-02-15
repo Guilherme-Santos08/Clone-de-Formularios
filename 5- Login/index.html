@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      data-auto-replace-svg
+    ></script>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Login</title>
-   <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-   <link rel="stylesheet" href="style.css">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-   <main>
+  <body>
+    <main>
       <form action="">
-         <h1>Login</h1>
-         <p>Doesn't have an account yet? <a href="#">Sign up</a></p>
+        <h1>Login</h1>
+        <p class="text">Doesn't have an account yet? <a href="#">Sign up</a></p>
 
-         <div class="input-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="password" name="password" pattern="@/.com" required>
-         </div>
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="password"
+            name="password"
+            pattern="@/.com"
+            required
+            placeholder="you@example.com"
+          />
+        </div>
 
-         <div class="input-group input-group2">
-            <label for="password">Password <span><a href="#">Forgot Password?</a></span></label>
-            <input type="password" id="password" name="password">
-         </div>
+        <div class="input-group input-group2">
+          <label for="password"
+            >Password <span><a href="#">Forgot Password?</a></span></label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter 6 character or more"
+          />
+        </div>
 
-         <p><input type="checkbox"> Remember me</p>
+        <p class="check"><input type="checkbox" /> Remember me</p>
 
-         <button type="submit">Login</button>
+        <button type="submit">Login</button>
 
-         <div class="alternative">
-            <span>or login with</span>
-         </div>
+        <div class="alternative">
+          <span>or login with</span>
+        </div>
 
-         <div class="social-media">
-            <button><a href="#"><i class="fab fa-google"></i>Google</a></button>
-            <button><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></button>
-         </div>
+        <div class="social-media">
+          <button class="btn1">
+            <a href="#"><i class="fab fa-google"></i> Google</a>
+          </button>
+          <button class="btn2">
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+          </button>
+        </div>
       </form>
 
       <div class="image">
-         <img src="assets/undraw_pair_programming_njlp.svg" alt="image">
+        <img src="assets/undraw_pair_programming_njlp.svg" alt="image" />
       </div>
-   </main>
-</body>
-
+    </main>
+  </body>
 </html>

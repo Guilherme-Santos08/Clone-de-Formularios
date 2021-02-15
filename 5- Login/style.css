@@ -17,10 +17,15 @@ body {
    align-items: center;
 
    background-image: linear-gradient(to right top, #6755e0, #7357de, #7e59dd, #885bdb, #915dda);
+   background-repeat: no-repeat;
+}
+
+p {
+   color: #737373;
 }
 
 main {
-   width: 1450px;
+   width: 1150px;
    min-height: 600px;
 
    padding: 40px;
@@ -50,13 +55,20 @@ form h1 {
    margin-top: 10px;
    font-size: 2rem;
 }
-form p {
-   margin-bottom: 25px;
+form .text {
+   font-size: 0.9rem;
+
+   margin-bottom: 20px;
    color: #737373;
 }
 
 form p a {
    color: #662adc;
+   transition: all .2s ease-in-out;
+}
+
+form p a:hover  {
+   color: #7235eb;
 }
 
 /* ------ Input/label ------ */
@@ -67,13 +79,11 @@ form p a {
    margin-top: 2px;
 
    border: solid 1px #737373;
-
    outline: none;
 }
 
 .input-group label {
    font-size: 13px;
-   
 }
 
 .input-group2 {
@@ -85,20 +95,101 @@ form p a {
 }
 
 .input-group2 label span a{
-   color: #662adc
+   color: #662adc;
+   transition: all .2s ease-in-out;
+   opacity: 0.9;
 }
 
-input[type="checkbox"]{
+.input-group2 label span a:hover {
+   color: #7235eb;
+   opacity: 1;
+}
+
+.check input[type="checkbox"]{
+   margin-top: 20px;
+}
+
+
+/* ------ Button ------ */
+form button[type="submit"] {
+   width: 100%;
+   margin-top: 25px;
+   padding: 15px;
+
+   text-transform: uppercase;
+   font-weight: 600;
+
+   color: white;
+   background-color: #662adc;
+   border-radius: 5px;
+   cursor: pointer;
+
+   transition: all .2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+   background-color: #7235eb;
+}
+
+.social-media {
    margin-top: 15px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.social-media button {
+   width: 100%;
+   padding: 15px;
+   margin-left: 15px;
+
+   border: solid 1px;
+   border-radius: 5px;
+   background-color: white;
+   cursor: pointer;
+}
+
+.social-media button a {
+   text-decoration: none;
+}
+
+/* ------ Button Google ------ */
+
+.social-media button:nth-child(1){
+   margin-left: 0;
+   border: solid 1px #F22816;
+}
+.social-media button:nth-child(1) a {
+   color: #F22816;
+}
+
+/* ------ Button Facebook------ */
+
+.social-media button:nth-child(2) {
+   border: solid 1px #1F1BA6;
+}
+.social-media button:nth-child(2) a {
+   color: #1F1BA6;
 }
 
 
+/* ------ Alternative ------ */
+.alternative span {
+   font-size: 13px;
+   margin-top: 15px;
+   
+   color:  #737373;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 
 /* ------ Image ------ */
 .image img {
    width: 500px;
    height: 500px;
 
-   position: absolute;
-   right: 0;
+   margin-left: 135px;
 }
