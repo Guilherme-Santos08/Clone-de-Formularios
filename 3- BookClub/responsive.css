@@ -1,0 +1,74 @@
+@media (max-width:1024px) {
+   body {
+      height: 100vh;
+      overflow: hidden;
+   }
+   
+   main {
+      width: 50rem;
+   }
+
+   .container {
+      margin: 0;
+      padding: 20px;
+   }
+
+   .container header p{
+      padding: 1px;
+   }
+
+   .image img {
+      width: 250px;
+
+   
+   }
+
+   form {
+      flex-direction: column;
+   }
+}
+
+@media (max-width:768px) {
+   main {
+      flex-direction: column;
+      width: 35rem;
+      height: 39  rem;
+   }
+
+   .container {
+      padding: 20px 25px 0 25px;
+   }
+
+   .image img {
+      width: 35rem;
+      height: 160px;
+      border-radius: 10px 14px 0 0;
+   }
+
+   .container header{
+      padding-bottom: 0;
+   }
+
+   form{
+      margin-top: 30px;
+   }
+   .input-group1 input {
+      width: 230px;
+   }
+
+   .input-group2 input {
+      width: 490px;
+   }
+
+   .btn {
+      margin-top: 15px;
+   }
+
+   .login p {
+      margin-top: 5px;
+   }
+}
+
+@media (max-width: 425px) {
+   
+}
