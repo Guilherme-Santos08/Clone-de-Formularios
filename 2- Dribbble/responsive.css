@@ -1,0 +1,27 @@
+@media (max-width: 375px) {
+   
+   main {
+      width: 330px;
+      height: 430px;
+   }
+
+   .input-group  input{
+      width: 17rem;
+   }
+
+   #nome {
+      width: 8.3rem;
+   }
+
+   .btn {
+      width: 268px;
+      margin-top: 15px;
+   }
+   
+   .terms {
+      font-size: 0.8rem;
+   }
+   .terms a {
+      font-size: 0.8rem;
+   }
+}
