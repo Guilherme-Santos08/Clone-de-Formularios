@@ -1,4 +1,4 @@
-@media (max-width:1024px) {
+@media (max-width:1124px) {
    body {
       height: 100vh;
    }
@@ -27,7 +27,7 @@
    }
 }
 
-@media (max-width:768px) {
+@media (max-width:810px) {
    main {
       flex-direction: column;
       width: 35rem;
@@ -68,7 +68,7 @@
    }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 560px) {
    main {
       width: 25rem;
    }
@@ -111,7 +111,7 @@
    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
    main {
       width: 20rem;
       height: 550px;
