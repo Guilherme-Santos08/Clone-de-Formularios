@@ -1,7 +1,6 @@
 @media (max-width:1024px) {
    body {
       height: 100vh;
-      overflow: hidden;
    }
    
    main {
@@ -32,7 +31,7 @@
    main {
       flex-direction: column;
       width: 35rem;
-      height: 39  rem;
+      height: 700px;
    }
 
    .container {
@@ -41,7 +40,7 @@
 
    .image img {
       width: 35rem;
-      height: 160px;
+      height: 230px;
       border-radius: 10px 14px 0 0;
    }
 
@@ -50,7 +49,7 @@
    }
 
    form{
-      margin-top: 30px;
+      margin-top: 15px;
    }
    .input-group1 input {
       width: 230px;
@@ -70,5 +69,101 @@
 }
 
 @media (max-width: 425px) {
-   
+   main {
+      width: 25rem;
+   }
+
+   .image img {
+      width: 25rem;
+      height: 205px;
+   }
+
+   .container {
+      padding: 12px;
+   }
+
+   .container header h1 {
+      text-align: center;
+   }
+
+   .container header p {
+      line-height: 1.2rem;
+   }
+
+   .input-group1 input {
+      width: 170px;
+   }
+
+   .input-group2 input {
+      width: 370px;
+   }
+
+   .container p {
+      font-size: 0.8rem;
+   }
+
+   .container p a{
+      font-size: 0.8rem;
+      line-height: 1.1rem;
+   }
+   .btn{
+      width: 180px;
+   }
+}
+
+@media (max-width: 375px) {
+   main {
+      width: 20rem;
+      height: 550px;
+   }
+
+   /* ------ Container ------ */
+   .container {
+      margin-top: 3px;
+   }
+
+   .container header {
+      padding: 0 0.8rem;
+   }
+   .container header h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 0;
+   }
+
+   .container header p {
+      margin-top: 8px;
+      line-height: 1.2rem;
+   }
+
+   /* ------ Formulario ------*/
+   .rigth {
+      margin: 0 10px 0px 0;
+   }
+
+   .input-group1 input {
+      width: 140px;
+   }
+
+   .input-group1 label {
+      font-size: 0.9rem;
+      margin-left: 5px;
+   }
+
+   .input-group2 input {
+      width: 295px;
+   }
+
+   .input-group2 label {
+      font-size: 0.9rem;
+      margin-left: 5px;
+   }
+
+   .login p {
+      margin-top: 12px;
+   }
+
+   .image img {
+      display: none;
+   }
 }
